@@ -400,7 +400,9 @@ What Arrays are good at
 
 ### Sorting:
 
-Arrays: Arrays.sort(int[]) (dual-pivot quicksort, unstable), Arrays.sort(Object[]) (TimSort, stable).
+Arrays: 
+* Arrays.sort(int[]) (dual-pivot quicksort, unstable).
+* Arrays.sort(Object[]) (TimSort, stable).
 
 Collections: List.sort(Comparator) (TimSort, stable), with composable comparators.
 
