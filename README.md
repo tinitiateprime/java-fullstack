@@ -66,7 +66,7 @@
             * break
             * continue
             * return
-    * ### [Arrays](./core-java/java-basics/arrays/arrays.md)
+    * ### [Arrays](./core-java/arrays/arrays.md)
         * Introduction to Arrays
         * Declaring & Initializing Arrays
             * One-dimensional Arrays
@@ -85,7 +85,7 @@
         * Limitations of Arrays
             * Fixed Size
             * Comparison with Collections
-    * ### [Classes & Objects](./core-java/java-basics/classes-objects/classes_objects.md)
+    * ### [Classes & Objects](./core-java/classes-objects/classes_objects.md)
         * Defining a Class
         * Creating Objects
         * Methods
@@ -832,3 +832,63 @@
         * Hibernate + SQL Database
         * Authentication with JWT
         * Deployment using Docker & AWS
+
+# Arrays Utility Class
+
+In Java, arrays are basic data structures, but they don’t come with built-in methods to perform operations like searching, comparing, or converting to string.
+
+To simplify working with arrays, Java provides a utility class called java.util.Arrays.
+
+This class contains many static methods (methods that can be called without creating an object) to manipulate arrays efficiently.
+
+Common uses include:
+
+* Sorting arrays
+
+* Searching elements
+
+* Comparing arrays
+
+* Converting arrays to strings
+
+## Copying arrays
+
+Key Point: Instead of writing extra code manually, you can directly use methods from Arrays class.
+
+# Arrays.toString
+
+Normally, printing an array directly using System.out.println(arr) doesn’t give meaningful output. It shows something like [I@2f92e0f4 (memory reference).
+
+The method Arrays.toString() solves this problem by converting the array into a readable string format.
+
+It returns the elements enclosed in square brackets [] and separated by commas.
+
+Use Case: Best for displaying array contents easily while debugging or printing results.
+
+#  Arrays.equals
+
+In Java, comparing arrays with == only checks if they point to the same memory location, not the actual contents.
+
+To check if two arrays have the same length and same elements in the same order, we use Arrays.equals().
+
+It returns:
+
+true → if both arrays are equal element by element.
+
+false → if arrays differ in size or elements.
+
+Use Case: Best for content comparison between arrays, instead of just checking references.
+
+# Arrays.copyOf
+
+Sometimes, you may want to make a new array from an existing one or increase the size of an array.
+
+The method Arrays.copyOf() helps by copying the original array into a new array of the specified length.
+
+If the new length is:
+
+Smaller → the array gets truncated.
+
+Larger → the extra elements are filled with default values (0 for numbers, null for objects, false for booleans).
+
+Use Case: Best for resizing arrays or making a safe copy without affecting the original.
