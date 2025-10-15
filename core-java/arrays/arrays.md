@@ -390,7 +390,7 @@ What Arrays are good at
 
 * Arrays are covariant (String[] is an Object[]), which can throw ArrayStoreException at runtime.
 
-* *enerics are invariant and checked at compile time (safer).
+* Generics are invariant and checked at compile time (safer).
 
 * Boxing overhead in Collections:
 
@@ -398,16 +398,4 @@ What Arrays are good at
 
 * If you need both dynamic sizing and primitive speed, consider specialized libs later (beyond core Java).
 
-### Sorting:
 
-Arrays: 
-* Arrays.sort(int[]) (dual-pivot quicksort, unstable).
-* Arrays.sort(Object[]) (TimSort, stable).
-
-Collections: List.sort(Comparator) (TimSort, stable), with composable comparators.
-
-### Iteration:
-
-Arrays use indices or enhanced for (for (int x : a)), but no Iterator/ListIterator.
-
-Collections integrate with forEach, iterator, Streams, and Collectors.
