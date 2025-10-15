@@ -66,7 +66,7 @@
             * break
             * continue
             * return
-    * ### [Arrays](./core-java/arrays/arrays.md)
+    * ### [Arrays](./core-java/java-basics/arrays/arrays.md)
         * Introduction to Arrays
         * Declaring & Initializing Arrays
             * One-dimensional Arrays
@@ -97,15 +97,15 @@
         * Access Modifiers (public, private, protected, default)
         * `this` keyword
 
-* ### [Object Oriented Programming Concepts](./core-java/java-oop/java_oop.md)
-    * ### [Encapsulation](./core-java/java-oop/encapsulation/encapsulation.md)
+* ### [Object Oriented Programming Concepts](./core-java/java-object-oriented-programming/java-object-oriented-programming.md)
+    * ### [Encapsulation](./core-java/java-object-oriented-programming/encapsulation/encapsulation.md)
         * Definition & Importance
         * Data Hiding
         * Getters & Setters
         * Access Modifiers and Encapsulation
         * Real-world Example (Bank Account, Student Class)
         * Best Practices
-    * ### [Inheritance](./core-java/java-oop/inheritance/inheritance.md)
+    * ### [Inheritance](./core-java/java-object-oriented-programming/inheritance/inheritance.md)
         * Definition & Use Cases
         * Types of Inheritance
             * Single Inheritance
@@ -117,16 +117,14 @@
         * Method Overriding
         * Constructor Chaining
         * Limitations of Inheritance
-        * Real-world Example (Vehicle → Car → ElectricCar)
-    * ### [Polymorphism](./core-java/java-oop/polymorphism/polymorphism.md)
+    * ### [Polymorphism](./core-java/java-object-oriented-programming/polymorphism/polymorphism.md)
         * Definition & Types
             * Compile-time Polymorphism (Method Overloading)
             * Runtime Polymorphism (Method Overriding)
         * Rules for Overloading & Overriding
         * Dynamic Method Dispatch
         * `instanceof` Operator
-        * Real-world Example (Shape → Circle, Rectangle, Triangle)
-    * ### [Abstraction](./core-java/java-oop/abstraction/abstraction.md)
+    * ### [Abstraction](./core-java/java-object-oriented-programming/abstraction/abstraction.md)
         * Definition & Importance
         * Abstract Classes
             * Abstract Methods
@@ -136,8 +134,6 @@
             * Default & Static Methods (Java 8+)
             * Functional Interfaces
         * Difference Between Abstract Classes & Interfaces
-        * Real-world Example (Payment → CreditCardPayment, UpiPayment)
-
 * ### [Advanced Java](./core-java/java-advanced/java_advanced.md)
 
     * ### [Exception Handling](./core-java/java-advanced/exception-handling/exception_handling.md)
