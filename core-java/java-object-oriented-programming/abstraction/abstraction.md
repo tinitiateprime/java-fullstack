@@ -1,6 +1,5 @@
 # Abstraction — Definition & Importance
 
-Definition:
 Abstraction is the practice of exposing only what a user needs (the what) and hiding how it’s done (the how). In Java you achieve this using interfaces and abstract classes (and, at a higher level, well-named methods/APIs).
 
 ## Why it matters (Importance):
@@ -264,21 +263,6 @@ int n = len.apply("hello"); // 5
 
 Transformer<String, Integer> len2 = String::length;  // method reference
 ```
-
-Built-in functional interfaces (java.util.function):
-
-Supplier<T> (no args → T), Consumer<T> (T → void), Function<T,R> (T → R),
-Predicate<T> (T → boolean), BiFunction<T,U,R>, etc.
-
-Composing defaults on functional interfaces:
-
-import java.util.function.Function;
-
-Function<Integer, Integer> times2 = x -> x * 2;
-Function<Integer, Integer> plus3  = x -> x + 3;
-
-Function<Integer, Integer> f = times2.andThen(plus3); // (x*2)+3
-System.out.println(f.apply(5)); // 13
 
 
 ## Difference Between Abstract Classes & Interfaces

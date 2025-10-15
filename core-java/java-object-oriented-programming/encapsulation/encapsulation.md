@@ -16,22 +16,25 @@ It lets the class enforce rules/invariants so objects never slip into an invalid
 
 ```java
 // Fields are private; class enforces rules via methods (encapsulation).
-public class BankAccount {
-    private double balance;               // hidden state
-
-    public BankAccount(double opening) {
-        if (opening < 0) throw new IllegalArgumentException("opening < 0");
-        balance = opening;
-    }
-
-    public double getBalance() { return balance; }            // safe read
-    public void deposit(double amt) {                         // controlled write
-        if (amt <= 0) throw new IllegalArgumentException("amt <= 0");
-        balance += amt;
+public class Encapsulation {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.setId(101);                     // set data safely
+        System.out.println("Student ID: " + s.getId());
     }
 }
-// Usage: new BankAccount(1000).deposit(200);  // caller can't set balance directly
 
+class Student {
+    private int id;    // private = hidden data
+
+    public void setId(int value) {   // method to set value
+        id = value;
+    }
+
+    public int getId() {             // method to get value
+        return id;
+    }
+}
 ```
 
 ## Data Hiding
@@ -52,7 +55,6 @@ Data hiding is how we implement encapsulation: we hide fields using access modif
 #### Example
 
 ```java
-
 // File: device/Sensor.java (assume this class is in package 'device')
 package device;
 
@@ -104,7 +106,7 @@ Getters and setters are small methods that read and update an object’s private
 * Read-only or write-controlled access: expose a getter but no setter.
 
 ```java
-Minimal example
+// example
 public class User {
     private String email;          // hidden state
     private int age;
@@ -127,7 +129,6 @@ public class User {
         this.age = age;
     }
 }
-
 ```
 
 ## Access modifiers 

@@ -50,7 +50,8 @@ class Greeter {
     System.out.println("Hello, " + name);
   }
   void hello(String name, int times) {   // 3) two params
-    for (int i = 0; i < times; i++) System.out.println("Hello, " + name);
+    for (int i = 0; i < times; i++) 
+    System.out.println("Hello, " + name);
   }
 }
 
@@ -96,7 +97,9 @@ class Demo {
 ```java
 // Syntax pattern
 class Parent {
-  void speak() { System.out.println("Parent speaking"); }
+  void speak() { 
+    System.out.println("Parent speaking"); 
+    }
 }
 
 class Child extends Parent {
@@ -112,12 +115,18 @@ abstract class Shape {
 
 class Circle extends Shape {
   @Override
-  void draw() { System.out.println("Drawing a circle"); }
+  void draw()
+   { 
+    System.out.println("Drawing a circle");
+   }
 }
 
 class Rectangle extends Shape {
   @Override
-  void draw() { System.out.println("Drawing a rectangle"); }
+  void draw() 
+  { 
+    System.out.println("Drawing a rectangle");
+  }
 }
 
 class Painter {

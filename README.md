@@ -66,7 +66,7 @@
             * break
             * continue
             * return
-    * ### [Arrays](./core-java/java-basics/arrays/arrays.md)
+    * ### [Arrays](./core-java/arrays/arrays.md)
         * Introduction to Arrays
         * Declaring & Initializing Arrays
             * One-dimensional Arrays
@@ -85,6 +85,43 @@
         * Limitations of Arrays
             * Fixed Size
             * Comparison with Collections
+    * ### [Strings](./core-java/strings/strings.md)
+        * Introduction to Strings
+        * Declaring & Initializing Strings
+        * String Immutability
+        * String Operations
+            * length(), charAt(), substring(), indexOf(), lastIndexOf()
+            * toUpperCase(), toLowerCase(), trim(), replace(), contains()
+            * equals(), equalsIgnoreCase(), compareTo(), startsWith(), endsWith()
+        * String Concatenation
+            * Using `+` operator
+            * Using `concat()` method
+            * Using `String.join()` and `String.format()`
+        * String Comparison
+            * `==` vs `equals()`
+            * Lexicographical comparison using `compareTo()`
+        * StringBuilder and StringBuffer
+            * Mutable alternatives to String
+            * Key methods: append(), insert(), delete(), reverse(), toString()
+            * Performance and thread-safety differences
+        * String Conversion
+            * String ↔ Primitive (Integer.parseInt, String.valueOf)
+            * String ↔ Char Array
+        * String Splitting & Joining
+            * split(), String.join()
+        * Common String Problems
+            * Reverse a String
+            * Check Palindrome
+            * Count Vowels/Consonants
+            * Remove White Spaces
+            * Find Character Frequency
+        * String Utility Methods
+            * format(), valueOf(), replaceAll(), isEmpty(), isBlank()
+        * Limitations of Strings
+            * Immutability overhead
+            * Prefer StringBuilder for modifications
+
+
     * ### [Classes & Objects](./core-java/classes-objects/classes_objects.md)
         * Defining a Class
         * Creating Objects

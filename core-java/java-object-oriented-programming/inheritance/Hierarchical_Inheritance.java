@@ -16,7 +16,7 @@ public class Hierarchical_Inheritance {
         c.eat();         // inherited from Animal
         c.makeSound();   // Cat's override
 
-        // Polymorphism (optional): parent references pointing to child objects
+       //  parent references pointing to child objects
         Animal a1 = new Dog();
         Animal a2 = new Cat();
         a1.makeSound();  // calls Dog's version at runtime
@@ -49,3 +49,5 @@ class Cat extends Animal {
         System.out.println("Cat meows");
     }
 }
+
+
