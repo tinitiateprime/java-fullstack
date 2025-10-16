@@ -229,7 +229,7 @@ public class StringConcatenationExample {
 }
 ```
 
-## String Compariso
+## String Comparison
 String comparison in Java is used to check whether two strings are the same or to determine their order alphabetically (lexicographically).  
 Since String is an object, comparisons can be done in two main ways:  
 
@@ -261,9 +261,9 @@ Since String is an object, comparisons can be done in two main ways:
     * Compares two strings lexicographically (dictionary order).
     * **Returns:**
 
-      * 0 → if both strings are equal
-      * < 0 → if string1 comes before string2
-      * > 0 → if string1 comes after string2
+      * ` 0 → `   if both strings are equal
+      * ` < 0 ` → if string1 comes before string2
+      * ` > 0 ` → if string1 comes after string2
 
     * Comparison is case-sensitive (use compareToIgnoreCase() to ignore case).
 
@@ -369,10 +369,10 @@ This is extremely common when handling user input, performing calculations, or d
  * Converting between Strings and primitives (like int, double, etc.)
  * Converting between Strings and character arrays (char[])
 
- ### String ↔ Primitive Conversion
-   * #### Converting String → Primitive
-     Use wrapper class methods like Integer.parseInt(), Double.parseDouble(), etc.  
-     These convert numeric strings into their respective primitive values.
+ ## String ↔ Primitive Conversion
+   * ### Converting String → Primitive
+      Use wrapper class methods like Integer.parseInt(), Double.parseDouble(), etc.  
+     These convert numeric strings into their respective primitive values.  
 
      Syntax:
      ```java
@@ -389,3 +389,249 @@ This is extremely common when handling user input, performing calculations, or d
       String str2 = String.valueOf(45.6);
       String str3 = 99 + "";   // implicit conversion using +
       ```
+ ### String ↔ Char Array Conversion
+   * #### String → Char Array
+     Use toCharArray() to break a string into its individual characters.
+
+     Syntax:
+     ```java
+      char[] letters = str.toCharArray();
+     ```
+
+   * #### Char Array → String
+     Use the String constructor or String.valueOf(char[]) to rebuild a String.
+
+     Syntax:
+     ```java
+      String newStr = new String(letters);
+     ```
+#### Example
+```java
+    public class StringConversionExample {
+    public static void main(String[] args) {
+
+        // String → Primitive
+        String numStr = "150";
+        int num = Integer.parseInt(numStr);
+        double val = Double.parseDouble("45.67");
+        boolean boolVal = Boolean.parseBoolean("true");
+        System.out.println("int: " + num);          // Output: int: 150
+        System.out.println("double: " + val);       // Output: double: 45.67
+        System.out.println("boolean: " + boolVal);  // Output: boolean: true
+
+        // Primitive → String
+        String s1 = String.valueOf(200);
+        String s2 = String.valueOf(55.8);
+        System.out.println("String 1: " + s1);      // Output: String 1: 200
+        System.out.println("String 2: " + s2);      // Output: String 2: 55.8
+
+        // String → Char Array
+        String word = "Java";
+        char[] letters = word.toCharArray();
+        System.out.println("First char: " + letters[0]); // Output: First char: J
+
+        // Char Array → String
+        String rebuilt = new String(letters);
+        System.out.println("Rebuilt String: " + rebuilt); // Output: Rebuilt String: Java
+    }
+}
+```
+## String Splitting & Joining
+String splitting and joining are two essential operations in Java used for breaking a string into parts and combining multiple strings into one.
+  * Splitting allows you to divide a string into smaller pieces based on a delimiter (like space, comma, or symbol).
+  * Joining lets you combine multiple words, phrases, or array elements into a single string.  
+
+Both are extremely useful in data processing, file reading, and text formatting tasks.
+
+* ### Splitting a String — split()
+    
+  * The split() method divides a string into an array of substrings.
+  * It uses a delimiter (regular expression) to decide where to split.
+  * Returns a String array.
+
+   Syntax  
+    ```java
+     String[] parts = str.split("delimiter");
+    ```
+
+> #### Notes  
+> * Common delimiters: " ", ",", "\\n", "-", "\\|"  
+> * Use double backslash (\\) for special characters in regex.
+
+  * ### Joining Strings — String.join()
+    * The String.join() method joins multiple strings using a given delimiter.
+    * Works with individual strings or an array/collection of strings.
+    * Introduced in Java 8.
+
+    Syntax   
+    ```java
+      String result = String.join("delimiter", str1, str2, str3);
+      String result = String.join("delimiter", stringArray);
+    ```
+#### Example
+```java
+public class StringSplitJoinExample {
+    public static void main(String[] args) {
+        // SPLIT EXAMPLES
+        String sentence = "Java is fun to learn";
+        String[] words = sentence.split(" ");        // split by space
+
+        System.out.println("After splitting:");
+        for (String w : words) {
+            System.out.println(w);                   // Output: Java / is / fun / to / learn
+        }
+
+        // Split using comma
+        String csv = "Apple,Banana,Cherry,Dates";
+        String[] fruits = csv.split(",");
+        System.out.println("Second fruit: " + fruits[1]); // Output: Banana
+
+        // JOIN EXAMPLES
+        String joined = String.join(" ", "Learn", "Java", "Easily");
+        System.out.println("Joined String: " + joined);   // Output: Learn Java Easily
+
+        // Join using array
+        String[] langs = {"C", "C++", "Java", "Python"};
+        String languages = String.join(" | ", langs);
+        System.out.println("Languages: " + languages);    // Output: C | C++ | Java | Python
+    }
+}
+```
+
+## String Utility Methods 
+The String class in Java provides several utility methods that simplify text handling —
+from formatting and conversion to checking for emptiness or cleaning up input.
+
+These methods improve readability and reduce boilerplate code for everyday string manipulation tasks.
+
+
+  * ### String.format()
+     * Creates formatted strings using placeholders (like %s, %d, %f).
+     * Similar to printf, but returns a String instead of printing it.  
+
+    Syntax
+    ```java
+    String result = String.format("Name: %s, Age: %d", name, age);
+    ```
+> Notes   
+> * %s → String   
+> * %d → Integer   
+> * %f → Floating-point number (use %.2f for 2 decimals) 
+
+  * ### String.valueOf()
+     * Converts any primitive or object into its string form.
+     * Prevents NullPointerException by returning "null" if the argument is null.  
+
+    Syntax  
+    ```java
+    String s1 = String.valueOf(123);
+    String s2 = String.valueOf(true);
+    ```
+
+  * ### replaceAll()
+    * Replaces all matching substrings based on a regular expression (regex).
+    * Use replace() if you don’t need regex support.
+
+    Syntax  
+    ```java
+    String result = text.replaceAll("regex", "replacement");
+    ```
+  > Notes
+  > *  To remove digits: replaceAll("[0-9]", "")
+  > * To remove spaces: replaceAll("\\s+", "")
+
+ * ### isEmpty()
+    * Returns true if the string’s length is 0.
+    * Does not ignore spaces.  
+
+    Syntax  
+    ```java
+    boolean result = str.isEmpty(); 
+    ``` 
+   
+  * ### isBlank() (Java 11+)
+    * Returns true if a string is empty or only contains whitespace.
+    * Safer and more flexible than isEmpty().
+
+    Syntax  
+    ```java
+    boolean result = str.isBlank();
+    ```
+
+  #### Example 
+  ```java
+  public class StringUtilityExample {
+    public static void main(String[] args) {
+        // format()
+        String name = "Ravi";
+        int age = 25;
+        double score = 88.567;
+        String formatted = String.format("Name: %s, Age: %d, Score: %.2f", name, age, score);
+        System.out.println(formatted); // Output: Name: Ravi, Age: 25, Score: 88.57
+
+        // valueOf()
+        int number = 100;
+        boolean flag = true;
+        String numStr = String.valueOf(number);
+        String boolStr = String.valueOf(flag);
+        System.out.println(numStr);   // Output: 100
+        System.out.println(boolStr);  // Output: true
+
+        // replaceAll()
+        String messy = "Java123Programming456";
+        String cleaned = messy.replaceAll("[0-9]", "");
+        System.out.println(cleaned);  // Output: JavaProgramming
+
+        // isEmpty() and isBlank()
+        String s1 = "";
+        String s2 = "   ";
+        System.out.println(s1.isEmpty());  // Output: true
+        System.out.println(s2.isEmpty());  // Output: false
+        System.out.println(s1.isBlank());  // Output: true
+        System.out.println(s2.isBlank());  // Output: true
+    }
+}
+```
+
+## Limitations of Strings
+In Java, objects of the String class are immutable, meaning once a string is created, it cannot be changed.
+While immutability provides safety and efficiency in some cases, it can also cause performance overhead when strings are frequently modified.
+
+
+  * ### Immutability Overhead
+    * Each modification (like concatenation, replacement, etc.) creates a new String object in memory instead of changing the original one.
+
+    * This leads to:
+       * Extra memory usage (multiple copies created).
+       * Slower performance in loops or repeated operations.
+       * Increased garbage collection, since many intermediate objects are discarded.
+
+#### Example
+```java
+public class StringLimitationExample {
+    public static void main(String[] args) {
+        String text = "Java";
+        text = text + " Programming";   // new object created
+        text = text + " Language";      // another new object
+        System.out.println(text);       // Output: Java Programming Language
+    }
+}
+```
+>Each + operation above creates a new String object, even though we’re just adding text.
+
+  * ### Prefer StringBuilder for Modifications
+     * Unlike String, StringBuilder is mutable — it allows changes to the same object.
+     * It avoids repeated object creation, making it much faster and memory-efficient  for concatenations inside loops or large text construction.
+
+#### Example
+```java
+public class StringBuilderBetterExample {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Java");
+        sb.append(" Programming");
+        sb.append(" Language");
+        System.out.println(sb.toString());   // Output: Java Programming Language
+    }
+}
+```
+> Only one object is created and modified in place.

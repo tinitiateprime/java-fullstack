@@ -173,7 +173,7 @@
         * Difference Between Abstract Classes & Interfaces
 * ### [Advanced Java](./core-java/java-advanced/java_advanced.md)
 
-    * ### [Exception Handling](./core-java/java-advanced/exception-handling/exception_handling.md)
+    * ### [Exception Handling](./core-java/exception-handling/exception-handling.md)
         * Introduction to Exceptions
             * What is an Exception?
             * Exception Hierarchy (Throwable → Exception / Error)
@@ -189,7 +189,7 @@
             * `throw` keyword
             * `throws` keyword
         * Custom Exceptions
-        * Best Practices for Exception Handling
+        <!-- * Best Practices for Exception Handling -->
 
     * ### [Collections Framework](./java-core-language/java-advanced/collections-framework/collections_framework.md)
         * Introduction to Collections
