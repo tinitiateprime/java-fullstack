@@ -191,7 +191,7 @@
         * Custom Exceptions
         <!-- * Best Practices for Exception Handling -->
 
-    * ### [Collections Framework](./java-core-language/java-advanced/collections-framework/collections_framework.md)
+    * ### [Collections Framework](./core-java/collections-framework/collections_framework.md)
         * Introduction to Collections
             * Arrays vs Collections
             * Collection Hierarchy
@@ -208,9 +208,9 @@
         * Utility Classes
             * Collections
             * Arrays
-        * Best Practices
 
-    * ### [Generics](./java-core-language/java-advanced/generics/generics.md)
+
+    * ### [Generics](./core-java/generics/generics.md)
         * Introduction to Generics
         * Generic Classes
         * Generic Methods
@@ -244,7 +244,7 @@
             * CountDownLatch
             * Semaphore
             * Concurrent Collections
-        * Best Practices
+    
 
     * ### [Java I/O & Streams](./java-core-language/java-advanced/java-io-streams/java_io_streams.md)
         * Java I/O Basics
