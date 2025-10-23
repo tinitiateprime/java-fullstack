@@ -10,45 +10,59 @@ Reusability & clarity: one algorithm, many types, cleaner APIs.
 ### Common letters
 * T (Type), E (Element), K/V (Key/Value), R (Result).
 
-**Tiny contrast (raw vs generic)**
+**Examples** (raw vs generic)**
 ```java
-// File: IntroNoGenerics.java  (raw/legacy style — avoid)
+// File: IntroNoGenerics.java  
+// ❌ Example of raw (non-generic) code — unsafe at runtime
 import java.util.ArrayList;
 import java.util.List;
 
 public class IntroNoGenerics {
     public static void main(String[] args) {
-        List raw = new ArrayList();      // raw type (no <T>)
+        List raw = new ArrayList();  // raw type (no <T>)
         raw.add("hello");
-        raw.add(123);                    // mixed types allowed (danger)
+        raw.add(123);  // mixed types allowed — risky!
 
-        // Need casts; this compiles but may fail at runtime:
+        // Need explicit cast — can cause runtime error
         String a = (String) raw.get(0);  // OK
-        // String b = (String) raw.get(1); // ClassCastException at runtime ❌
-        System.out.println(a);
+        // String b = (String) raw.get(1); // ❌ would cause ClassCastException
+        System.out.println("First element: " + a);
+        System.out.println("Code ran, but unsafe if we used wrong types!");
     }
 }
+
+/*
+Expected Output:
+First element: hello
+Code ran, but unsafe if we used wrong types!
+*/
+
 ```
 ```java
-// File: IntroWithGenerics.java  (modern, type-safe)
+// File: IntroWithGenerics.java  
+//  Example of Generic List — type-safe and modern
 import java.util.ArrayList;
 import java.util.List;
 
 public class IntroWithGenerics {
     public static void main(String[] args) {
-        List<String> words = new ArrayList<>(); // diamond operator infers <String>
+        // List is restricted to hold only Strings
+        List<String> words = new ArrayList<>();
         words.add("hello");
-        // words.add(123); // ❌ compile-time error: wrong type
+        // words.add(123); // ❌ compile-time error: incompatible type
 
-        String first = words.get(0);     // no cast needed
-        System.out.println(first.toUpperCase());
+        String first = words.get(0); // no cast needed
+        System.out.println("First element: " + first.toUpperCase());
+        System.out.println("Code is type-safe and clean!");
     }
 }
 
+/*
+Expected Output:
+First element: HELLO
+Code is type-safe and clean!
+*/
 
-// Expected output
-
-// HELLO
 ```
 ## Generic Classes
 A generic class introduces a type parameter on the class itself: class Box<T> { ... }. Every instance “plugs in” a real type for T (e.g., Box<String>, Box<Integer>). The class works uniformly for all such types.
@@ -70,51 +84,78 @@ class Pair<K,V> {    // multiple type parameters
 **Example A: Box<T>**  
 ```java
 // File: BoxDemo.java
+// 🧠 Demonstrates a simple Generic Class that can store any type of value
 class Box<T> {
-    private T value;
-    public Box(T value) { this.value = value; }
-    public T get()      { return value; }
-    public void set(T v){ this.value = v; }
+    private T value;  // T can be String, Integer, or any other type
+
+    public Box(T value) {
+        this.value = value;
+    }
+
+    public T get() {
+        return value;
+    }
+
+    public void set(T newValue) {
+        this.value = newValue;
+    }
 }
 
 public class BoxDemo {
     public static void main(String[] args) {
-        Box<String> text = new Box<>("hello");
-        Box<Integer> count = new Box<>(42);
+        Box<String> message = new Box<>("Hello Java Generics");
+        Box<Integer> number = new Box<>(100);
 
-        System.out.println(text.get().toUpperCase()); // uses String API
-        System.out.println(count.get() + 8);          // uses Integer
+        System.out.println("String Box: " + message.get());
+        System.out.println("Integer Box: " + number.get());
     }
 }
 
+/*
+Expected Output:
+String Box: Hello Java Generics
+Integer Box: 100
+*/
 
-// Expected output
-
-// HELLO
-// 50
 ```
 **Example B: Pair<K,V>**
 ```java
 // File: PairDemo.java
+// 🧠 Demonstrates a Generic Class with TWO type parameters (K and V)
 class Pair<K, V> {
     private final K key;
     private final V value;
-    public Pair(K key, V value) { this.key = key; this.value = value; }
-    public K key()   { return key; }
-    public V value() { return value; }
+
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
 }
 
 public class PairDemo {
     public static void main(String[] args) {
-        Pair<String, Integer> p = new Pair<>("score", 95);
-        System.out.println(p.key() + " = " + p.value());
+        Pair<String, String> country = new Pair<>("India", "New Delhi");
+        Pair<String, Integer> product = new Pair<>("Laptop", 65000);
+
+        System.out.println("Country: " + country.getKey() + " - Capital: " + country.getValue());
+        System.out.println("Product: " + product.getKey() + " - Price: ₹" + product.getValue());
     }
 }
 
+/*
+Expected Output:
+Country: India - Capital: New Delhi
+Product: Laptop - Price: ₹65000
+*/
 
-// Expected output
-
-// score = 95
 ```
 
 ### Notes & best practices
@@ -137,29 +178,39 @@ static <T extends Comparable<T>> T max(T a, T b) { ... } // bounded
 
 **Example A:** swap (any array type)
 ```java
-// File: GenericMethodSwap.java
+// File: GenericMethod_SwapExample.java
+// 🧠 Topic: Generic Methods
+// Demonstrates a Generic Method that swaps two elements in any array type
 import java.util.Arrays;
 
-public class GenericMethodSwap {
+public class GenericMethod_SwapExample {
 
-    // Generic method: works for T[] of any reference type
+    // Generic method that swaps any type of array elements
     public static <T> void swap(T[] arr, int i, int j) {
-        T temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        T temp = arr[i];   // store one element temporarily
+        arr[i] = arr[j];   // swap positions
+        arr[j] = temp;     // put temp back
     }
 
     public static void main(String[] args) {
-        String[] colors = {"red", "blue", "green"};
+        String[] colors = {"Red", "Blue", "Green"};
+        System.out.println("Before swap: " + Arrays.toString(colors));
+
         swap(colors, 0, 2); // swap first and last
-        System.out.println(Arrays.toString(colors));
+        System.out.println("After swap:  " + Arrays.toString(colors));
+
+        Integer[] numbers = {1, 2, 3};
+        swap(numbers, 0, 1);
+        System.out.println("Numbers after swap: " + Arrays.toString(numbers));
     }
 }
 
-
-// Expected output
-
-// [green, blue, red]
+/*
+Expected Output:
+Before swap: [Red, Blue, Green]
+After swap:  [Green, Blue, Red]
+Numbers after swap: [2, 1, 3]
+*/
 ```
 
 **Example B:** max with an upper bound
@@ -203,65 +254,41 @@ public class GenericMethodMax {
 
 **Example** — average of numbers + min/max + a multi-bound method
 ```java
+// File: BoundedType_SingleBoundExample.java
+// 🧠 Topic: Bounded Type Parameters (Single Bound)
+// Demonstrates restricting a generic class to accept only numeric types.
 
-import java.util.Arrays;
-import java.util.List;
+class Calculator<T extends Number> {
+    private T num1;
+    private T num2;
 
-class Stats<T extends Number> {              // Only numeric types allowed
-    private final List<T> data;
-    Stats(List<T> data) { this.data = data; }
+    public Calculator(T num1, T num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+    }
 
-    double average() {
-        double sum = 0.0;
-        for (T n : data) sum += n.doubleValue(); // safe: T is a Number
-        return sum / data.size();
+    public double sum() {
+        return num1.doubleValue() + num2.doubleValue();
     }
 }
 
-class MinMax<T extends Comparable<T>> {     // Needs compareTo capability
-    private final List<T> data;
-    MinMax(List<T> data) { this.data = data; }
-
-    T min() {
-        T best = data.get(0);
-        for (T x : data) if (x.compareTo(best) < 0) best = x;
-        return best;
-    }
-    T max() {
-        T best = data.get(0);
-        for (T x : data) if (x.compareTo(best) > 0) best = x;
-        return best;
-    }
-}
-
-public class BoundedTypeParamsDemo {
-    // Multiple bounds: a numeric type that is also comparable
-    public static <T extends Number & Comparable<T>> T bigger(T a, T b) {
-        return a.compareTo(b) >= 0 ? a : b;
-    }
-
+public class BoundedType_SingleBoundExample {
     public static void main(String[] args) {
-        Stats<Integer> s1 = new Stats<>(Arrays.asList(10, 20, 30));
-        Stats<Double>  s2 = new Stats<>(Arrays.asList(1.5, 2.5, 3.0));
-        System.out.printf("%.1f%n", s1.average());   // 20.0
-        System.out.printf("%.2f%n", s2.average());   // 2.33
+        Calculator<Integer> intCalc = new Calculator<>(10, 20);
+        Calculator<Double> dblCalc = new Calculator<>(2.5, 4.5);
 
-        MinMax<String> words = new MinMax<>(Arrays.asList("apple", "mango", "banana"));
-        System.out.println(words.min());             // apple
-        System.out.println(words.max());             // mango
-
-        System.out.println(bigger(12, 5));           // 12
+        System.out.println("Integer sum: " + intCalc.sum());
+        System.out.println("Double sum: " + dblCalc.sum());
+        // Calculator<String> strCalc = new Calculator<>("A", "B"); // ❌ compile-time error
     }
 }
 
+/*
+Expected Output:
+Integer sum: 30.0
+Double sum: 7.0
+*/
 
-// Expected output
-
-// 20.0
-// 2.33
-// apple
-// mango
-// 12
 ```
 
 ### Key points
@@ -324,42 +351,38 @@ Consumer Super (`? super`) for writing.
 
 **Example A** — write integers into any suitable supertype list
 ```java
+// File: LowerBound_AddNumbersExample.java
+// 🧠 Topic: Lower Bounded Wildcards (? super)
+// Demonstrates adding integer values safely to a list of any supertype (Number, Object).
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
-public class LowerBoundSuperDemo {
+public class LowerBound_AddNumbersExample {
 
-    // Consumer: can ADD Integers into any List<? super Integer>
-    static void addOneToFive(List<? super Integer> out) {
-        for (int i = 1; i <= 5; i++) out.add(i);
-    }
-
-    // Classic copy: src produces T, dst consumes T
-    public static <T> void copy(List<? extends T> src, List<? super T> dst) {
-        for (T x : src) dst.add(x);
+    // Consumer: list can accept Integers because it's a List<? super Integer>
+    static void addNumbers(List<? super Integer> list) {
+        list.add(10);
+        list.add(20);
+        list.add(30);
     }
 
     public static void main(String[] args) {
-        // A) Lower-bounded write
-        List<Number> bucket = new ArrayList<>();
-        addOneToFive(bucket);                 // OK: Number is a supertype of Integer
-        System.out.println(bucket);
+        List<Number> numbers = new ArrayList<>();
+        List<Object> objects = new ArrayList<>();
 
-        // B) Copy using extends (producer) and super (consumer)
-        List<Integer> from = Arrays.asList(1, 2, 3);
-        List<Number>  to   = new ArrayList<>();
-        copy(from, to);
-        System.out.println(to);
+        addNumbers(numbers); // OK — Number is a supertype of Integer
+        addNumbers(objects); // OK — Object is also a supertype of Integer
+
+        System.out.println("Numbers List: " + numbers);
+        System.out.println("Objects List: " + objects);
     }
 }
 
-
-// Expected output
-
-// [1, 2, 3, 4, 5]
-// [1, 2, 3]
+/*
+Expected Output:
+Numbers List: [10, 20, 30]
+Objects List: [10, 20, 30]
+*/
 ```
 
 #### Key points
@@ -397,30 +420,43 @@ Producer → Extends, Consumer → Super.
 
 example (runnable)
 ```java
-import java.util.Arrays;
-import java.util.List;
+// File: UnboundedWildcard_PrintExample.java
+// 🧠 Topic: Unbounded Wildcards (List<?>)
+// Demonstrates printing elements of any type safely using an unbounded wildcard.
 
-public class UnboundedDemo {
-    static void printAll(List<?> items) {
-        for (Object x : items) {            // read as Object
-            System.out.print(x + " ");
+import java.util.*;
+
+public class UnboundedWildcard_PrintExample {
+
+    // Can accept a list of any type (Integer, String, etc.)
+    static void printItems(List<?> items) {
+        for (Object item : items) {
+            System.out.print(item + " ");
         }
         System.out.println();
-        // items.add("x"); // ❌ not allowed (unknown element type)
-        // items.add(null); // only null is allowed, but usually avoid adding here
+        // items.add("New Item"); // ❌ Not allowed — type unknown
     }
 
     public static void main(String[] args) {
-        printAll(Arrays.asList(1, 2, 3));       // List<Integer>
-        printAll(Arrays.asList("a", "b", "c")); // List<String>
+        List<Integer> numbers = Arrays.asList(10, 20, 30);
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+
+        System.out.println("Printing Numbers:");
+        printItems(numbers);
+
+        System.out.println("Printing Names:");
+        printItems(names);
     }
 }
 
+/*
+Expected Output:
+Printing Numbers:
+10 20 30 
+Printing Names:
+Alice Bob Charlie 
+*/
 
-// Expected output
-
-// 1 2 3 
-// a b c 
 ```
 
 ### 2. Upper-Bounded ? extends T
@@ -443,29 +479,39 @@ Meaning: A list whose element type is some unknown subtype of `T `(could be exac
 
 **example (runnable)**
 ```java
-import java.util.Arrays;
-import java.util.List;
+// File: UpperBound_ReadOnlyExample.java
+// 🧠 Topic: Upper Bounded Wildcards (? extends T)
+// Demonstrates that we can READ safely from a list of any subtype of Number,
+// but we CANNOT add new elements because the exact subtype is unknown.
 
-public class UpperBoundDemo {
-    static double sumNumbers(List<? extends Number> nums) {
-        double total = 0.0;
-        for (Number n : nums) {
-            total += n.doubleValue();  // safe: every element is a Number
+import java.util.*;
+
+public class UpperBound_ReadOnlyExample {
+
+    // Method works with any list of Number or its subclass (Integer, Double, etc.)
+    static double calculateTotal(List<? extends Number> list) {
+        double total = 0;
+        for (Number n : list) {
+            total += n.doubleValue();  // safe: all elements are Numbers
         }
+        // list.add(5); // ❌ Not allowed – compiler doesn’t know if list is Integer, Double, etc.
         return total;
     }
 
     public static void main(String[] args) {
-        System.out.println(sumNumbers(Arrays.asList(1, 2, 3)));   // List<Integer>
-        System.out.println(sumNumbers(Arrays.asList(1.5, 2.0)));  // List<Double>
-        // nums.add(5); // ❌ not allowed inside this method (unknown exact subtype)
+        List<Integer> integers = Arrays.asList(10, 20, 30);
+        List<Double> doubles = Arrays.asList(1.5, 2.5, 3.0);
+
+        System.out.println("Integer Total: " + calculateTotal(integers));
+        System.out.println("Double Total: " + calculateTotal(doubles));
     }
 }
 
-// Expected output
-
-// 6.0
-// 3.5
+/*
+Expected Output:
+Integer Total: 60.0
+Double Total: 7.0
+*/
 ```
 
 ### 3. Lower-Bounded ? super T
@@ -581,3 +627,8 @@ public class ListsDemo {
 * Overloads that erase to the same signature are illegal: process(List<String>) and process(List<Integer>) can’t coexist.
 * Checked exceptions can’t be generic types (you can’t catch E where E is a type param).
 * Varargs with generics can cause “heap pollution” warnings; use @SafeVarargs carefully.
+
+##### [Back To Contents](../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

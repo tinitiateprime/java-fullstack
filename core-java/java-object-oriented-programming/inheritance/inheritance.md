@@ -602,3 +602,8 @@ new Bottom();
 // Flow: parent ctors always run before child ctors.
 
 ```
+
+##### [Back To Contents](../../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

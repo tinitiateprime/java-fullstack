@@ -399,3 +399,7 @@ What Arrays are good at
 * If you need both dynamic sizing and primitive speed, consider specialized libs later (beyond core Java).
 
 
+##### [Back To Contents](../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

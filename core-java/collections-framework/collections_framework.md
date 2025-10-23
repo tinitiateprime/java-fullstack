@@ -100,6 +100,43 @@ Collection Output: [Ravi, Neha, Amit, Sara]
 The Java Collections Framework is organized in a hierarchical interface structure,
 where Collection is the root interface (except Map, which has a separate branch). -->
 
+ # Java Collections Hierarchy
+
+- **java.lang.Iterable**
+  - **java.util.Collection** → root collection interface
+    - **List** → ordered, index-based, allows duplicates
+      - ArrayList
+      - LinkedList
+      - Vector *(legacy)*
+        - Stack *(legacy)*
+      - CopyOnWriteArrayList *(concurrent, read-heavy)*
+    - **Set** → unique elements (no duplicates)
+      - HashSet *(no order)*
+      - LinkedHashSet *(insertion order)*
+      - **SortedSet**
+        - **NavigableSet**
+          - TreeSet *(sorted)*
+      - CopyOnWriteArraySet *(concurrent)*
+    - **Queue** → FIFO / head–tail operations
+      - **Deque** *(double-ended queue)*
+        - ArrayDeque
+        - LinkedList
+      - PriorityQueue *(priority-ordered)*
+      - ConcurrentLinkedQueue *(concurrent)*
+
+- **java.util.Map** *(peer of Collection; not a sub-interface of it)* → key → value
+  - HashMap
+  - LinkedHashMap *(insertion/access order)*
+  - **SortedMap**
+    - **NavigableMap**
+      - TreeMap *(sorted by key)*
+  - ConcurrentHashMap *(concurrent)*
+  - WeakHashMap *(GC-sensitive keys)*
+  - IdentityHashMap *(`==` key equality)*
+  - Hashtable *(legacy)*
+
+> Notes: Prefer `ArrayDeque` over `Stack`. Use `LinkedHash*` when you need insertion order, `Tree*` when you need sorted order, and `Hash*` for fastest average-case lookups without order.
+
 
 ## Interfaces in Collections
 
@@ -1027,3 +1064,8 @@ public class ArraysDemo3 {
 // equals:      false
 // deepEquals:  true
 ```
+
+##### [Back To Contents](../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

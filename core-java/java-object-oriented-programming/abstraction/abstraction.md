@@ -278,3 +278,8 @@ Transformer<String, Integer> len2 = String::length;  // method reference
 | **Access modifiers on methods** | Any valid Java modifier | Non-default/static methods are `public` by default |
 | **When to pick** | Common state/logic + template flow across related subclasses | Common capability needed by many unrelated classes |
 | **Instantiation** | ❌ Cannot instantiate abstract class | ❌ Cannot instantiate interface |
+
+##### [Back To Contents](../../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

@@ -224,7 +224,7 @@
         * Generics with Collections
         * Advantages & Limitations of Generics
 
-    * ### [Multithreading & Concurrency](./java-core-language/java-advanced/multithreading-concurrency/multithreading_concurrency.md)
+    * ### [Multithreading & Concurrency](./core-java/multithreading-concurrency/multithreading_concurrency.md)
         * Introduction to Multithreading
             * Process vs Thread
             * Thread Lifecycle
@@ -246,7 +246,7 @@
             * Concurrent Collections
     
 
-    * ### [Java I/O & Streams](./java-core-language/java-advanced/java-io-streams/java_io_streams.md)
+    * ### [Java I/O & Streams](./core-java/java-io-streams/java_io_streams.md)
         * Java I/O Basics
             * Byte Streams vs Character Streams
             * InputStream & OutputStream
@@ -261,9 +261,9 @@
         * Java NIO (New I/O)
             * Channels & Buffers
             * Paths & Files class
-        * Best Practices
+        <!-- * Best Practices -->
 
-    * ### [Java 8+ Features](./jcore-java/java-advanced/java8-features/java8_features.md)
+    * ### [Java 8+ Features](./core-java/java8-features/java8_features.md)
         * Lambda Expressions
             * Syntax & Usage
             * Functional Programming basics

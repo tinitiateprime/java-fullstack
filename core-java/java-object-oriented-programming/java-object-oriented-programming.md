@@ -50,3 +50,7 @@ This bundling makes programs easier to understand, change, and test.
 * Constructors: set valid initial state; good place for validation.
 
 
+##### [Back To Contents](../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

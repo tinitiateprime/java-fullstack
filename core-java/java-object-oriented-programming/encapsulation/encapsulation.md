@@ -180,3 +180,8 @@ Modifier	| Same class	| Same package	| Subclass (diff pkg) 	| Everywhere |
 * Mind thread-safety: prefer immutable objects; avoid shared mutable state or guard it properly.
 
 * Keep packages as module boundaries: hide implementation with package-private classes; expose only stable facades/interfaces.
+
+##### [Back To Contents](../../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

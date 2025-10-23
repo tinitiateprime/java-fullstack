@@ -177,3 +177,8 @@ System.out.println(result); // 20
 ```
 Explanation:
 * has higher precedence than +, so 5 * 2 is done first → 10 + 10 = 20.
+
+##### [Back To Contents](../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

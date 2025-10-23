@@ -507,3 +507,8 @@ Exception in thread "main" InsufficientBalanceException: Withdrawal amount excee
 ```
 >Here, InsufficientBalanceException is unchecked, so the compiler doesn’t require handling —
 but it still halts the program unless caught.
+
+##### [Back To Contents](../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|

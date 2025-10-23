@@ -233,3 +233,8 @@ String _internalId;
 // int 1stScore;     // starts with digit
 // int class;        // 'class' is a keyword
 ```
+
+##### [Back To Contents](../../README.md)
+***
+| &copy; TINITIATE.COM |
+|----------------------|
