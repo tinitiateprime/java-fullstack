@@ -462,6 +462,53 @@ Primitive types cannot be used with generics — wrappers make it possible.
 * Help in Null Handling   
 Wrapper classes can store null, primitives cannot.
 
+## Null and Default Values
+
+In Java, variables must be initialized before they are used.
+However, when you declare a variable as a class field (instance or static variable) and don’t assign a value to it, Java automatically gives it a default value depending on its data type.
+
+When you declare a local variable (inside a method), it does not get a default value — you must assign one before using it.
+
+
+### Default Values for Each Data Type
+
+| **Data Type** | **Default Value** | **Description** |
+|----------------|-------------------|------------------|
+| **byte** | `0` | Represents small integers |
+| **short** | `0` | Slightly larger integer type |
+| **int** | `0` | Default integer value |
+| **long** | `0L` | Ends with `L` to mark long type |
+| **float** | `0.0f` | Floating-point default |
+| **double** | `0.0d` | Double precision floating-point |
+| **char** | `'\u0000'` | Unicode null character (looks blank) |
+| **boolean** | `false` | Logical false |
+| **Reference types (e.g., String, arrays, objects)** | `null` | Means “no object assigned” |
+
+### What Is null?
+
+* null means no object reference — the variable does not point to any real object in memory.
+* You can assign null only to non-primitive (reference) types.
+* Trying to use a variable that holds null (for example, calling a method on it) will cause a NullPointerException.
+
+**Example:**
+```java
+String name = null;
+System.out.println(name.length()); // ❌ Throws NullPointerException
+```
+
+To avoid errors, always check for null before using:
+```java
+if (name != null) {
+    System.out.println(name.length());
+}
+```
+
+### Key Points to Remember
+* Primitive types (like int, double, boolean) never hold null.
+* Reference types (like String, arrays, objects) can be null.
+* Default values apply only to fields, not local variables inside methods.
+* Always initialize local variables before using them.
+* Using uninitialized or null variables leads to runtime errors.
 
 ##### [Back To Contents](../../README.md)
 ***
