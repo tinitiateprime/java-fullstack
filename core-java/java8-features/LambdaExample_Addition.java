@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : java 8 Features
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: LambdaExample3_Addition.java
 // Demonstrates a lambda expression that takes parameters and returns a result.
 

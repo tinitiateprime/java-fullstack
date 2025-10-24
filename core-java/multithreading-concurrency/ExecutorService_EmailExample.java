@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: ExecutorService_EmailExample.java
 // Topic: ExecutorService (Thread Pool)
 // Demonstrates how a thread pool can run multiple tasks (like sending emails) concurrently.

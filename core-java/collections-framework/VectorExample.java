@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework Vector Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // Demonstrates common operations on Vector:
 // updating, removing, iterating elements
 

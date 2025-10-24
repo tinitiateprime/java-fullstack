@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework LinkedHash MapExample
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // Demonstrates LinkedHashMap preserving insertion order and updating values
 
 import java.util.*;

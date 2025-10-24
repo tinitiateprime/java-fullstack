@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Strings
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 /**
  * Reverse a String
  * ----------------

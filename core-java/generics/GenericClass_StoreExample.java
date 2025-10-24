@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generic Class  
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // File: GenericClass_StoreExample.java
 // 🧠 Topic: Generic Classes
 // Demonstrates a simple Generic Class that can store and retrieve any type of item (String, Integer, etc.)

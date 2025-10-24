@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework ListInterface Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+  
+
 import java.util.*;
 
 public class ListInterfaceExample {

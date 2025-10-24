@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Constructor Chaining Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 /**
  * Constructor Chaining
  * --------------------

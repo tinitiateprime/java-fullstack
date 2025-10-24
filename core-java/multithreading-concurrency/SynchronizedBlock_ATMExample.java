@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: SynchronizedBlock_ATMExample.java
 // Topic: Synchronized Blocks
 // Demonstrates synchronized block — only the critical section (transaction) is locked.

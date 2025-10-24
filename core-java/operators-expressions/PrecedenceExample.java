@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Operators Expressions
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 public class PrecedenceExample {
     public static void main(String[] args) {
         int result1 = 10 + 5 * 2;

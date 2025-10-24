@@ -8,23 +8,23 @@
 
 
 
+// File: InstantExample.java
+// Demonstrates using Instant for UTC timestamps.
 
-// File: Function_AgeToMessage.java
-// Demonstrates Function<T,R> that converts a number into a sentence
+import java.time.Instant;
 
-import java.util.function.Function;
-
-public class Function_AgeToMessage {
+public class InstantExample {
     public static void main(String[] args) {
-        Function<Integer, String> ageMessage = age -> "You are " + age + " years old.";
+        Instant now = Instant.now();
+        Instant afterOneMinute = now.plusSeconds(60);
 
-        System.out.println(ageMessage.apply(18));
-        System.out.println(ageMessage.apply(25));
+        System.out.println("Current Instant: " + now);
+        System.out.println("After One Minute: " + afterOneMinute);
     }
 }
 
 /*
 Expected Output:
-You are 18 years old.
-You are 25 years old.
+Current Instant: 2025-10-21T09:30:00Z
+After One Minute: 2025-10-21T09:31:00Z
 */

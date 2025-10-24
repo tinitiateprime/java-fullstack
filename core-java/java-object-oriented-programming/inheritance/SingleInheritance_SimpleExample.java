@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Single Inheritance Simple Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 /**
  * Single Inheritance (simple)
  * ---------------------------

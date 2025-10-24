@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Abstract Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 /**
  * Abstract class (super simple)
  * -----------------------------

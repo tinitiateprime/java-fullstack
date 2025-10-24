@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : FunctionalInterface
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 /**
  * FunctionalInterfaces_SimpleExample
  * ----------------------------------

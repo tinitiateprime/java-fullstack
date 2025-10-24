@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 // File: Lock_PrintQueueExample.java
 // Topic: ReentrantLock
 // Demonstrates how Lock ensures only one user can print at a time.

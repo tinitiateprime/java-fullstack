@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: ThreadMethod_JoinExample.java
 // Topic: Thread.join()
 // Demonstrates waiting for another thread to finish before continuing.

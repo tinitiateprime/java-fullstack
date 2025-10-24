@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework Hashtable Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // Demonstrates Hashtable restrictions (no nulls) and iteration
 
 import java.util.*;

@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Exception Handling Try With Resources Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // Demonstrates automatic resource management
 import java.io.*;
 

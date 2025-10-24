@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generic Classes with Multiple Type Parameters
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // File: GenericClass_PairExample.java
 // 🧠 Topic: Generic Classes with Multiple Type Parameters
 // Demonstrates how a Generic Class can hold two related values (like key–value or name–value pairs)

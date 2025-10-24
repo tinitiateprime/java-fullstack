@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework Stack Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // Demonstrates using Stack for a real-world problem: checking balanced parentheses
 
 import java.util.*;

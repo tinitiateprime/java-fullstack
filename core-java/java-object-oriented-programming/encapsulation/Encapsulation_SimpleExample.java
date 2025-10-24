@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Encapsulation Simple Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 /**
  * Simple Encapsulation Example (Beginner-friendly)
  * ------------------------------------------------

@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generics Upper Bounded Wildcards (? extends)
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // File: UpperBound_SumExample.java
 // 🧠 Topic: Upper Bounded Wildcards (? extends)
 // Demonstrates reading numeric values safely using ? extends Number

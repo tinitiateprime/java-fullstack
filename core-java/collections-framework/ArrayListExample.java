@@ -1,3 +1,11 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework ArrayList Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
 import java.util.ArrayList;
 
 public class ArrayListExample {

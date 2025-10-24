@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : java 8 Features
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: FileOutputStream_Example.java
 // Topic: Write raw bytes to a file with FileOutputStream
 

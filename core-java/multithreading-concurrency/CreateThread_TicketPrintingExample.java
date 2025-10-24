@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: CreateThread_TicketPrintingExample.java
 // Topic: Creating Threads (Extending Thread Class)
 // Demonstrates how to create threads by extending the Thread class.

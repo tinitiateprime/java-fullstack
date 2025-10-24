@@ -1,3 +1,11 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework ForEach Lambda Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
 public class ForEach_LambdaExample {
 public static void main(String[] args) {
         java.util.Map<String, Integer> cityToPopulationK = new java.util.LinkedHashMap<>();

@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : java 8 Features
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: Stream_SortedMapExample.java
 // Sorts names alphabetically and converts them to uppercase
 

@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: ThreadLifecycle_CookingExample.java
 // 🧠 Topic: Thread Lifecycle
 // Demonstrates basic thread states using a simple "Cooking Task" analogy.

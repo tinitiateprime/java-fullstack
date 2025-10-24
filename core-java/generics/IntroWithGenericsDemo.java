@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : IntroWithGenerics
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: IntroWithGenerics.java  
 // ✅ Extra Example — using Generics with Integer type
 import java.util.ArrayList;

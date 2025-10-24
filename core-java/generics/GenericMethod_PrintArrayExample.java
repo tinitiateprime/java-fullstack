@@ -1,3 +1,15 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generics  
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
+
 // File: GenericMethod_PrintArrayExample.java
 // 🧠 Topic: Generic Methods (Arrays)
 // Demonstrates a generic method that prints elements of any array type.

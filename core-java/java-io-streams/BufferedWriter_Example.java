@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Java I/O Streams Buffered Writer Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 // File: BufferedWriter_Example.java
 // Topic: Fast character writing using BufferedWriter (character stream with buffer)
 

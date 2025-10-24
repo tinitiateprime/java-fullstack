@@ -1,3 +1,11 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Exception Handling Custom Exception Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
 // Step 1: Define a custom checked exception class
 class InvalidScoreException extends Exception {
     public InvalidScoreException(String message) {

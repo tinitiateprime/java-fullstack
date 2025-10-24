@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework HashSet Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // Demonstrates HashSet unordered behavior and allowance of null values
 
 import java.util.*;

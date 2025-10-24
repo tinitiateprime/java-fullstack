@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Java I/O Streams FileReader Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 // File: FileReader_Example.java
 // Topic: Read text from a file using FileReader (character stream)
 

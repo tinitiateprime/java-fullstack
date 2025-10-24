@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Java I/O Streams FileInput Stream Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 // File: FileInputStream_Example.java
 // Topic: Read raw bytes from a file using FileInputStream (working directory)
 

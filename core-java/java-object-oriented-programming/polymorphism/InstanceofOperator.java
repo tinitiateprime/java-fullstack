@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Instance of Operator
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 /**
  * instanceof Operator
  * -------------------

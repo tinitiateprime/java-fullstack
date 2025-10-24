@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Data Hiding Private Field
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 /**
  * Data Hiding = "private fields" + only expose what callers need.
  * Here, password is private; outsiders cannot read or change it directly.

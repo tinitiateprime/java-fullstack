@@ -1,3 +1,11 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Control Flow IfElse Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
 public class IfElseExample {
     public static void main(String[] args) {
         int number = 5;

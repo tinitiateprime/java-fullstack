@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generics with Collections  
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 // File: GenericsWithCollections_StudentsExample.java
 // 🧠 Topic: Generics with Collections
 // Demonstrates how generics ensure type safety when working with Lists in Java.

@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : java 8 Features
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: FunctionalProgramming_MapExample.java
 // Topic: Functional Programming - Demonstrating the use of map() for transformation
 // Concept: map() applies a given function to each element of a collection (transformation)

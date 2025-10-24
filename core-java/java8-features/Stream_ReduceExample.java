@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : java 8 Features
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // File: Stream_ReduceExample.java
 // Demonstrates reduce() to calculate sum of numbers
 

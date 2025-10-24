@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: ConcurrentCollection_TodoListExample.java
 // Topic: Concurrent Collections
 // Demonstrates thread-safe list operations using CopyOnWriteArrayList.

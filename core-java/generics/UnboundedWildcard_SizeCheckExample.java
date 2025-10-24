@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generics Unbounded Wildcards (?)  
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: UnboundedWildcard_SizeCheckExample.java
 // 🧠 Topic: Unbounded Wildcards (?)
 // Demonstrates how methods can accept lists of any type for generic utility purposes.

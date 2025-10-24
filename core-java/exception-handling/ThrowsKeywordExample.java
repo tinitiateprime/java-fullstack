@@ -1,8 +1,20 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Exception Handling Throws Keyword Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // Demonstrates declaring exceptions with 'throws'
 import java.io.*;
 
 public class ThrowsKeywordExample {
-    static void openFile() throws IOException {
+    static void openFile() 
+    
+    throws IOException {
         // FileReader may throw IOException
         FileReader fr = new FileReader("data.txt");
         System.out.println("File opened successfully!");

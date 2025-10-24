@@ -1,3 +1,15 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multiple Inheritance Via Interfaces
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
+
 /**
  * MultipleInheritance_Via_Interfaces
  * ----------------------------------

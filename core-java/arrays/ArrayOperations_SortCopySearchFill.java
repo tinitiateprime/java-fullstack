@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Java arrays
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 import java.util.Arrays;
 
 /**
@@ -9,6 +19,7 @@ import java.util.Arrays;
  * - fill: set all values to one value (good for defaults)
  * - System.arraycopy: fast partial copying between arrays
  */
+
 public class ArrayOperations_SortCopySearchFill {
     public static void main(String[] args) {
         String[] tools = {"Git", "Maven", "Gradle"};

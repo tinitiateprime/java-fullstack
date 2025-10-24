@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Dynamic Method Dispatch
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 /**
  * Dynamic Method Dispatch
  * -----------------------

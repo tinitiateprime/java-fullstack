@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Exception Handling Try Catch Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // Demonstrates simple try-catch block
 public class TryCatchExample {
     public static void main(String[] args) {

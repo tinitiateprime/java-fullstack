@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: ThreadMethod_SleepExample.java
 // Topic: Thread.sleep()
 // Demonstrates pausing a thread to simulate time delay (like steps in a process).

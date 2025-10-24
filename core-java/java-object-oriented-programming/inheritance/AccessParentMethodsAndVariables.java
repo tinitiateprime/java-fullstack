@@ -1,3 +1,15 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Accessing Parent Methods And Variables Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
+
 // Use super to call parent method; access parent's protected variable.
 public class AccessParentMethodsAndVariables {
     public static void main(String[] args) {

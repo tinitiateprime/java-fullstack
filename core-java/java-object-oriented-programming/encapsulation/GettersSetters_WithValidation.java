@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Getters Setters With Validatio
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
+
 /**
  * Getters/Setters expose data safely and allow VALIDATION.
  * - Keep fields private

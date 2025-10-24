@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generics  Lower Bounded Wildcards (? super)
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: LowerBound_EmployeesExample.java
 // 🧠 Topic: Lower Bounded Wildcards (? super)
 // Demonstrates adding subclass objects (Employees) into a supertype list safely.

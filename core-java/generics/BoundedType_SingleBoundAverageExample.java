@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generics  Bounded Type Parameters (Single Bound)
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: BoundedType_SingleBoundAverageExample.java
 // 🧠 Topic: Bounded Type Parameters (Single Bound)
 // Demonstrates a generic class that calculates the average of two numbers.

@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : java 8 Features
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: MethodRef_ClassInstanceExample.java
 // Demonstrates: Calling an instance method (like toUpperCase) on every object in a Stream using method reference
 

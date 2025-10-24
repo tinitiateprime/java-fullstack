@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Collections Framework TreeMap Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // Demonstrates TreeMap with custom Comparator (reverse order) and navigation methods
 
 import java.util.*;

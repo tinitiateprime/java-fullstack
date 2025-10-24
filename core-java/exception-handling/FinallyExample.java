@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Exception Handling Finally Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // Demonstrates finally block usage
 public class FinallyExample {
     public static void main(String[] args) {

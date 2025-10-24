@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Multithreading Concurrency
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // File: CountDownLatch_RestaurantExample.java
 // Topic: CountDownLatch
 // Demonstrates how one thread waits for multiple tasks to complete before proceeding.

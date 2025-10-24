@@ -1,3 +1,14 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Inheritance Simple Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+ 
+
+
+
 /**
  * Simple inheritance example:
  * - Animal = parent (superclass) with eat()

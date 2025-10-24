@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Java I/O Streams ByteStream WriteBytes Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: ByteStream_WriteBytes_Simple.java
 // Topic: Write raw bytes to a file using FileOutputStream
 

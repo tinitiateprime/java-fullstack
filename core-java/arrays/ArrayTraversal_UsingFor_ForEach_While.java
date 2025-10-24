@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Java arrays
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 /**
  * TRAVERSING ARRAYS:
  * - for loop (index-based): you get the index; good for reading & updating.

@@ -1,3 +1,13 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Generic Methods  
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
+
 // File: GenericMethod_IdentityExample.java
 // 🧠 Topic: Generic Methods (Basic)
 // Demonstrates a simple generic method that returns the same value it receives.
