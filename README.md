@@ -20,8 +20,6 @@
             * Variable Reassignment
             * Variable Shadowing
             * Scope (block, method, class, global)
-        * Constants
-            * `final` keyword
         * Naming Rules
           
     * ### [Data Types](./core-java/data-types/data_types.md)
@@ -39,13 +37,11 @@
             * Arrays
             * Classes
             * Interfaces
-        * Type Casting
-            * Implicit (widening)
-            * Explicit (narrowing)
-        * Wrapper Classes
-            * Autoboxing
-            * Unboxing
         * Null and Default Values
+    * ### [Type Casting](./core-java/type-casting/type-casting.md)
+        * Implicit (widening)
+        * Explicit (narrowing)
+
     * ### [Operators & Expressions](./core-java/operators-expressions/operators_expressions.md)
         * Arithmetic Operators
         * Relational (Comparison) Operators
@@ -69,22 +65,17 @@
     * ### [Arrays](./core-java/arrays/arrays.md)
         * Introduction to Arrays
         * Declaring & Initializing Arrays
+            * Arrays of Various Data Types
             * One-dimensional Arrays
             * Multidimensional Arrays (2D, 3D)
         * Array Operations
             * Traversing (for, for-each, while loop)
             * Updating & Accessing Elements
-        * Common Array Problems
-            * Finding Max/Min
-            * Reversing an Array
-            * Sorting Arrays (using Arrays.sort)
         * Arrays Utility Class
             * Arrays.toString
             * Arrays.equals
             * Arrays.copyOf
         * Limitations of Arrays
-            * Fixed Size
-            * Comparison with Collections
     * ### [Strings](./core-java/strings/strings.md)
         * Introduction to Strings
         * Declaring & Initializing Strings
@@ -120,8 +111,9 @@
         * Limitations of Strings
             * Immutability overhead
             * Prefer StringBuilder for modifications
-
-
+    * ### [Wrapper Classes](./core-java/wrapper-classes/wrapper_classes.md)
+        * Autoboxing
+        * Unboxing
     * ### [Classes & Objects](./core-java/classes-objects/classes_objects.md)
         * Defining a Class
         * Creating Objects
@@ -171,7 +163,6 @@
             * Default & Static Methods (Java 8+)
             * Functional Interfaces
         * Difference Between Abstract Classes & Interfaces
-* ### [Advanced Java](./core-java/java-advanced/java_advanced.md)
 
     * ### [Exception Handling](./core-java/exception-handling/exception-handling.md)
         * Introduction to Exceptions
@@ -345,37 +336,45 @@
 
 * ### [Spring Boot](./backend/spring-boot/spring_boot.md)
 
-    * ### [Auto Configuration](./backend/spring-boot/auto-configuration/auto_configuration.md)
+    * ### [Introduction](/spring-boot/introduction.md)
+  
         * Introduction to Spring Boot
-            * Difference between Spring & Spring Boot
-            * Features & Advantages
-        * Auto Configuration Explained
-            * @SpringBootApplication
-            * @EnableAutoConfiguration
-            * Spring Boot Starters
-        * Application Properties vs YAML
-            * application.properties
-            * application.yml
+        * Difference between Spring & Spring Boot
+        * Features & Advantages
+    * Getting Started
         * Spring Boot CLI & Initializr
-            * Using Spring Initializr
-            * Command Line Setup
+        * Using Spring Initializr
+        * Command Line Setup
+    * Configuration Files
+        * Application Properties vs YAML
+        * application.properties
+        * application.yml
+    * Dependencies
+        * Spring Boot Starters
+    
+    * ### [Auto Configuration](./backend/spring-boot/auto-configuration/auto_configuration.md)
+      * Auto Configuration Explained
+        * @SpringBootApplication
+        * @EnableAutoConfiguration
+    
+
 
     * ### [Profiles & Configuration Management](./backend/spring-boot/profiles-configuration/profiles_configuration.md)
-        * Profiles in Spring Boot
-            * @Profile Annotation
-            * application-{profile}.yml
-            * Active Profiles
-        * External Configuration
-            * Environment Variables
-            * Command-Line Arguments
-            * System Properties
-        * Configuration Management
-            * @Value Annotation
-            * @ConfigurationProperties
-            * Type-safe Configuration
-        * Secrets Management
-            * Using .env files
-            * Integration with Vault, AWS Secrets Manager
+    * Profiles in Spring Boot
+        * @Profile Annotation
+        * application-{profile}.yml
+        * Active Profiles
+    * External Configuration
+        * Environment Variables
+        * Command-Line Arguments
+        * System Properties
+    * Configuration Management
+        * @Value Annotation
+        * @ConfigurationProperties
+        * Type-safe Configuration
+    * Secrets Management
+        * Using .env files
+        * Integration with Vault, AWS Secrets Manager
 
     * ### [REST API Development](./backend/spring-boot/rest-api/rest_api.md)
         * Introduction to REST Architecture
@@ -444,7 +443,6 @@
             * H2 In-Memory Database
         * TestContainers
             * Running DBs in Docker for Testing
-        * Best Practices for Spring Boot Testing
 
 * ### [Microservices](./backend/microservices/microservices.md)
 
