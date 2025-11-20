@@ -15,6 +15,7 @@ public class ContinueExample {
         }
     }
 }
+
 // Output:
 // 1
 // 2

@@ -16,5 +16,6 @@ public class ReturnExample {
         System.out.println("Sum: " + result);
     }
 }
+
 // Output:
 // Sum: 15

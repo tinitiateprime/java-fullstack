@@ -2,22 +2,17 @@
 //  Organization : TINITIATE TECHNOLOGIES PVT LTD
 //  Website      : tinitiate.com
 //  Script Title : Java Tutorial
-//  Description  : Control Flow IfElse Example
+//  Description  : Explicit Char To Byte
 //  Author       : Team Tinitiate
 // ==============================================================================
 
 
-public class IfElseExample {
+public class ExplicitCharToByte {
     public static void main(String[] args) {
-        int number = 5;
+        char grade = 'A';
+        byte gradeByte = (byte) grade; // Unicode → byte
 
-        if (number % 2 == 0) {
-            System.out.println("Even number");
-        } else {
-            System.out.println("Odd number");
-        }
+        System.out.println("Char value: " + grade);
+        System.out.println("Explicitly converted to byte: " + gradeByte);
     }
 }
-
-// Output:
-// Odd number

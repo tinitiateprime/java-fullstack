@@ -17,6 +17,7 @@ public class DoWhileLoopExample {
         } while (i <= 5);
     }
 }
+
 // Output:
 // 1
 // 2

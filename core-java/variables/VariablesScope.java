@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: VariablesScope.java
 public class VariablesScope {
     static int version = 1; // class scope

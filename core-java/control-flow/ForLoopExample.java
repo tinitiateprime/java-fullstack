@@ -13,6 +13,7 @@ public class ForLoopExample {
         }
     }
 }
+
 // Output:
 // 1
 // 2

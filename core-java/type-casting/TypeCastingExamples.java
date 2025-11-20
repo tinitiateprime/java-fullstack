@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: TypeCastingExamples.java
 import java.math.BigDecimal;
 

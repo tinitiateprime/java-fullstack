@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: VariablesTypesDemo.java
 public class VariablesTypesDemo {
     static String course = "Java Full Stack"; // static (class) variable

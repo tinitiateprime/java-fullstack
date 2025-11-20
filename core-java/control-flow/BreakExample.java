@@ -15,6 +15,7 @@ public class BreakExample {
         }
     }
 }
+
 // Output:
 // 1
 // 2

@@ -16,5 +16,6 @@ public class IfExample {
         }
     }
 }
+
 // Output:
 // Eligible to vote

@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: VariablesDefaultValues.java
 public class VariablesDefaultValues {
     int i;            // default 0

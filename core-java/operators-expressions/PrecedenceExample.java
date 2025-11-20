@@ -7,8 +7,6 @@
 // ==============================================================================
 
 
-
-
 public class PrecedenceExample {
     public static void main(String[] args) {
         int result1 = 10 + 5 * 2;

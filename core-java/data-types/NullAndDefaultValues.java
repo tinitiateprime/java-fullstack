@@ -1,3 +1,12 @@
+// ==============================================================================
+//  Organization : TINITIATE TECHNOLOGIES PVT LTD
+//  Website      : tinitiate.com
+//  Script Title : Java Tutorial
+//  Description  : Null And Default Values Example
+//  Author       : Team Tinitiate
+// ==============================================================================
+
+
 // File: NullAndDefaultValuesExample.java
 public class NullAndDefaultValues {
 

@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: VariablesMultipleDeclarations.java
 public class VariablesMultipleDeclarations {
     public static void main(String[] args) {

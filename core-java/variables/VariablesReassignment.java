@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: VariablesReassignment.java
 public class VariablesReassignment {
     public static void main(String[] args) {

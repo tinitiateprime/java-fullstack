@@ -2,22 +2,17 @@
 //  Organization : TINITIATE TECHNOLOGIES PVT LTD
 //  Website      : tinitiate.com
 //  Script Title : Java Tutorial
-//  Description  : Control Flow IfElse Example
+//  Description  : Implicit Char To Int
 //  Author       : Team Tinitiate
 // ==============================================================================
 
 
-public class IfElseExample {
+public class ImplicitCharToInt {
     public static void main(String[] args) {
-        int number = 5;
+        char letter = 'A';
+        int asciiValue = letter; // Implicit widening (Unicode value)
 
-        if (number % 2 == 0) {
-            System.out.println("Even number");
-        } else {
-            System.out.println("Odd number");
-        }
+        System.out.println("Char value: " + letter);
+        System.out.println("Implicitly converted to int (ASCII): " + asciiValue);
     }
 }
-
-// Output:
-// Odd number

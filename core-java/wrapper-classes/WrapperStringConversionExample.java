@@ -2,22 +2,17 @@
 //  Organization : TINITIATE TECHNOLOGIES PVT LTD
 //  Website      : tinitiate.com
 //  Script Title : Java Tutorial
-//  Description  : Control Flow IfElse Example
+//  Description  : Wrapper String Conversion Example
 //  Author       : Team Tinitiate
 // ==============================================================================
 
 
-public class IfElseExample {
+public class WrapperStringConversionExample {
     public static void main(String[] args) {
-        int number = 5;
+        String numberText = "123";
+        int number = Integer.parseInt(numberText);
 
-        if (number % 2 == 0) {
-            System.out.println("Even number");
-        } else {
-            System.out.println("Odd number");
-        }
+        System.out.println("String value: " + numberText);
+        System.out.println("Converted int value: " + number);
     }
 }
-
-// Output:
-// Odd number

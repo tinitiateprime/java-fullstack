@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: VariablesNamingRules.java
 public class VariablesNamingRules {
     public static void main(String[] args) {

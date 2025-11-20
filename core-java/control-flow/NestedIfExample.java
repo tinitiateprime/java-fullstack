@@ -6,6 +6,7 @@
 //  Author       : Team Tinitiate
 // ==============================================================================
 
+
 public class NestedIfExample {
     public static void main(String[] args) {
         int marks = 85;
@@ -21,5 +22,6 @@ public class NestedIfExample {
         }
     }
 }
+
 // Output:
 // Distinction

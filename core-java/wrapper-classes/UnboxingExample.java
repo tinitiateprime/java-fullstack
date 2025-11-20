@@ -2,22 +2,17 @@
 //  Organization : TINITIATE TECHNOLOGIES PVT LTD
 //  Website      : tinitiate.com
 //  Script Title : Java Tutorial
-//  Description  : Control Flow IfElse Example
+//  Description  : Unboxing Example
 //  Author       : Team Tinitiate
 // ==============================================================================
 
 
-public class IfElseExample {
+public class UnboxingExample {
     public static void main(String[] args) {
-        int number = 5;
+        Integer wrappedAge = 25;
+        int age = wrappedAge.intValue();  // Unboxing
 
-        if (number % 2 == 0) {
-            System.out.println("Even number");
-        } else {
-            System.out.println("Odd number");
-        }
+        System.out.println("Wrapped Integer: " + wrappedAge);
+        System.out.println("Unboxed int: " + age);
     }
 }
-
-// Output:
-// Odd number

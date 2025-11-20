@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // Simple Creation (Java)
 public class VariablesSimpleCreation  {
     public static void main(String[] args) {

@@ -7,9 +7,6 @@
 // ==============================================================================
 
 
-
-
-
 // File: VariablesShadowing.java
 public class VariablesShadowing {
     int value = 10; // field

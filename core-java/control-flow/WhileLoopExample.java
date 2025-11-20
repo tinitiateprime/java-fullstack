@@ -16,6 +16,7 @@ public class WhileLoopExample {
         }
     }
 }
+
 // Output:
 // 1
 // 2
