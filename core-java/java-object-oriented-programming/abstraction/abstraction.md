@@ -61,10 +61,11 @@ public abstract class ReportGenerator {
 
 ## Abstract Classes 
 
-A class declared with abstract that cannot be instantiated directly. It may include:
+An abstract class is a special class that you cannot create objects from directly.
+You use it only as a parent class, and other classes extend it and use its code. It may include:
 
 * Abstract methods (no body; subclasses must implement)
-
+* If a class declares at least one `abstract` method, the class itself **must** be declared `abstract`.
 * Concrete methods (with body; shared behavior)
 
 * Fields, constructors, static/final methods (like normal classes)
@@ -91,7 +92,15 @@ public abstract class BaseName {
 
 ## Abstract Methods
 
-A method declared with abstract and no body. It specifies a contract that must be implemented by the first non-abstract subclass (or by a class implementing an interface).
+An **abstract method** is a method declared with the `abstract` keyword and **no body**.  
+It defines a contract that must eventually be implemented by a concrete subclass (or by a class implementing an interface).
+
+* If a class declares at least one abstract method, that class **must** be declared `abstract`.
+* Any **non-abstract** subclass must implement **all** inherited abstract methods;  
+  otherwise, that subclass must also be declared `abstract`.
+* If no concrete class ever provides implementations for the abstract methods, the abstract base class is never truly usable in real code.
+
+
 
 ### example 
 ```java

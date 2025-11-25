@@ -304,7 +304,7 @@ public class Demo3 {
 // Dog(Buddy)
 
 ```
-❗ Only one of this(...) or super(...) may appear, and it must be the first statement in the constructor.
+>❗ Only one of this(...) or super(...) may appear, and it must be the first statement in the constructor.
 
 ### 3) Access Parent Methods with super.method(...)
 
@@ -466,7 +466,7 @@ public class OverridingDemo {
 // 1) a2 references a Dog object.
 // 2) a2.sound() calls Dog.sound() because dispatch happens at runtime by actual object.
 ```
-#### Overloading vs Overriding (quick contrast)
+### Overloading vs Overriding (quick contrast)
 ```Java
 class Example {
     void f(int x) {}           // overload #1 (different params)
@@ -521,7 +521,7 @@ class ChildBase extends Base {
 
    * Child constructor
 
-#### example: this(...) (same class)
+### example: this(...) (same class)
 ```java
 class Box {
     int w, h, d;
@@ -588,7 +588,7 @@ B(hello)
 ```
 
 
-#### Multi-level chain (constructor order)
+### Multi-level chain (constructor order)
 ```java
 class Top    { Top()    { System.out.println("Top");    } }
 class Middle extends Top { Middle() { System.out.println("Middle"); } }
