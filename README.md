@@ -125,6 +125,7 @@
             * Parameterized Constructor
         * Access Modifiers (public, private, protected, default)
         * `this` keyword
+        * Pass-by-Value (Java Parameter Passing)
 
 * ### [Object Oriented Programming Concepts](./core-java/java-object-oriented-programming/java-object-oriented-programming.md)
     * ### [Encapsulation](./core-java/java-object-oriented-programming/encapsulation/encapsulation.md)
@@ -274,9 +275,9 @@
             * ZonedDateTime, Instant
             * DateTimeFormatter
 
-* ### [Spring Framework](./backend/spring-framework/spring_framework.md)
+* ### [Spring Framework](./spring-framework/spring_framework.md)
 
-    * ### [Spring Core](./backend/spring-framework/spring-core/spring_core.md)
+    * ### [Spring Core](./spring-framework/spring-core/spring_core.md)
         * Introduction to Spring
             * What is Spring Framework?
             * Features of Spring
@@ -305,7 +306,7 @@
             * init() and destroy() methods
             * @PostConstruct and @PreDestroy
 
-    * ### [Spring MVC](./backend/spring-framework/spring-mvc/spring_mvc.md)
+    * ### [Spring MVC](./spring-framework/spring-mvc/spring_mvc.md)
         * Introduction to Spring MVC
             * MVC Design Pattern (Model-View-Controller)
             * Advantages of Spring MVC
@@ -334,7 +335,7 @@
             * Thymeleaf
             * FreeMarker
 
-* ### [Spring Boot](./backend/spring-boot/spring_boot.md)
+* ### [Spring Boot](./spring-boot/spring_boot.md)
 
     * ### [Introduction](/spring-boot/introduction.md)
   
@@ -352,14 +353,14 @@
     * Dependencies
         * Spring Boot Starters
     
-    * ### [Auto Configuration](./backend/spring-boot/auto-configuration/auto_configuration.md)
+    * ### [Auto Configuration](./spring-boot/auto-configuration/auto_configuration.md)
       * Auto Configuration Explained
         * @SpringBootApplication
         * @EnableAutoConfiguration
     
 
 
-    * ### [Profiles & Configuration Management](./backend/spring-boot/profiles-configuration/profiles_configuration.md)
+    * ### [Profiles & Configuration Management](./spring-boot/profiles-configuration/profiles_configuration.md)
     * Profiles in Spring Boot
         * @Profile Annotation
         * application-{profile}.yml
@@ -376,7 +377,7 @@
         * Using .env files
         * Integration with Vault, AWS Secrets Manager
 
-    * ### [REST API Development](./backend/spring-boot/rest-api/rest_api.md)
+    * ### [REST API Development](./spring-boot/rest-api/rest_api.md)
         * Introduction to REST Architecture
         * Creating REST Controllers
             * @RestController
@@ -397,7 +398,7 @@
         * Pagination & Sorting
         * File Upload & Download APIs
 
-    * ### [Spring Security](./backend/spring-boot/spring-security/spring_security.md)
+    * ### [Spring Security](./spring-boot/spring-security/spring_security.md)
         * Introduction to Security in Spring Boot
         * Authentication vs Authorization
         * Spring Security Basics
@@ -416,7 +417,7 @@
         * Method-Level Security
             * @PreAuthorize, @PostAuthorize
 
-    * ### [API Documentation](./backend/spring-boot/api-documentation/api_documentation.md)
+    * ### [API Documentation](./spring-boot/api-documentation/api_documentation.md)
         * Introduction to API Documentation
         * Swagger (Springfox)
             * Adding Swagger to Spring Boot
@@ -427,7 +428,7 @@
         * Best Practices for API Documentation
         * Generating API Docs Automatically
 
-    * ### [Testing](./backend/spring-boot/testing/testing.md)
+    * ### [Testing](./spring-boot/testing/testing.md)
         * Unit Testing
             * JUnit 5 Basics
             * Assertions
@@ -444,9 +445,9 @@
         * TestContainers
             * Running DBs in Docker for Testing
 
-* ### [Microservices](./backend/microservices/microservices.md)
+* ### [Microservices](./microservices/microservices.md)
 
-    * ### [Introduction to Microservices](./backend/microservices/introduction/introduction_microservices.md)
+    * ### [Introduction to Microservices](./microservices/introduction/introduction_microservices.md)
         * What are Microservices?
         * Monolith vs Microservices
         * Advantages of Microservices
@@ -457,14 +458,14 @@
             * High Cohesion
         * Real-world Examples of Microservices
 
-    * ### [Service Boundaries](./backend/microservices/service-boundaries/service_boundaries.md)
+    * ### [Service Boundaries](./microservices/service-boundaries/service_boundaries.md)
         * Identifying Service Boundaries
         * Business Capability-driven Design
         * Bounded Context (Domain-Driven Design)
         * Avoiding Over-Granularity
         * Example: E-commerce (Order Service, Payment Service, Inventory Service)
 
-    * ### [Communication (REST, Messaging)](./backend/microservices/communication/communication.md)
+    * ### [Communication (REST, Messaging)](./microservices/communication/communication.md)
         * Synchronous Communication
             * REST APIs
             * gRPC Basics
@@ -475,7 +476,7 @@
         * When to Choose REST vs Messaging
         * Handling Communication Failures
 
-    * ### [Service Discovery](./backend/microservices/service-discovery/service_discovery.md)
+    * ### [Service Discovery](./microservices/service-discovery/service_discovery.md)
         * What is Service Discovery?
         * Client-Side Discovery vs Server-Side Discovery
         * Netflix Eureka
@@ -488,7 +489,7 @@
         * DNS-based Service Discovery (Kubernetes)
         * Best Practices
 
-    * ### [API Gateway](./backend/microservices/api-gateway/api_gateway.md)
+    * ### [API Gateway](./microservices/api-gateway/api_gateway.md)
         * What is an API Gateway?
         * Role in Microservices Architecture
         * Spring Cloud Gateway
@@ -501,7 +502,7 @@
             * Rate Limiting
             * Logging & Monitoring
 
-    * ### [Centralized Config](./backend/microservices/centralized-config/centralized_config.md)
+    * ### [Centralized Config](./microservices/centralized-config/centralized_config.md)
         * The Need for Centralized Config
         * Spring Cloud Config
             * Config Server
