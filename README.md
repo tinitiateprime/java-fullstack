@@ -360,7 +360,7 @@
     
 
 
-    * ### [Profiles & Configuration Management](./spring-boot/profiles-configuration/profiles_configuration.md)
+    * ### [Profiles & Configuration Management](./spring-boot/profiles_configuration/profiles_configuration.md)
     * Profiles in Spring Boot
         * @Profile Annotation
         * application-{profile}.yml
