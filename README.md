@@ -274,6 +274,25 @@
             * LocalDate, LocalTime, LocalDateTime
             * ZonedDateTime, Instant
             * DateTimeFormatter
+* ### [Java Common Libraries](./java-common-libraries/java_common_libraries.md)
+    * JavaMail (Email API)
+        * What is JavaMail?
+        * SMTP basics (host, port, username, password)
+        * Adding JavaMail dependency (Maven/Gradle)
+        * Sending a simple text email
+        * Overview: HTML emails & attachments
+    * Log4j (Logging Framework)
+        * Need for logging vs System.out.println
+        * Log levels: ERROR, WARN, INFO, DEBUG, TRACE
+        * Adding Log4j dependency
+        * Creating and using a Logger
+        * Basic configuration (console/file logging)
+    * JUnit (Unit Testing)
+        * What is unit testing?
+        * Adding JUnit dependency
+        * Writing test classes and test methods
+        * Common assertions (assertEquals, assertThrows, etc.)
+        * Running tests from IDE / Maven
 
 * ### [Spring Framework](./spring-framework/spring_framework.md)
 
@@ -864,3 +883,7 @@
         * Hibernate + SQL Database
         * Authentication with JWT
         * Deployment using Docker & AWS
+
+* ### [Spring Boot Projects](./projects-mindmap/projectsMindMaps.md)
+    * HR Management System Mindmap
+    * Shopping Cart System Mindmap
