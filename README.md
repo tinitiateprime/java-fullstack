@@ -531,7 +531,7 @@
         * Security of Configurations
         * Alternatives (Consul KV, Vault, AWS Parameter Store)
 
-    * ### [Resilience](./backend/microservices/resilience/resilience.md)
+    * ### [Resilience](./microservices/resilience/resilience.md)
         * Introduction to Resilience
         * Failures in Distributed Systems
         * Resilience Patterns
@@ -545,7 +545,7 @@
             * Timeouts
             * Fallbacks
         * Hystrix (legacy comparison)
-        * Chaos Engineering Basics
+        <!-- * Chaos Engineering Basics -->
 
 
 * ### [Database & Persistence](./database/database_persistence.md)
